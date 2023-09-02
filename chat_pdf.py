@@ -87,4 +87,4 @@ iface.launch()
 # chat_pdf("C:/Users/scofi/Desktop/Audio gpt.docx","what's the point about this article?")
 # file_gpt("C:/Users/scofi/Desktop/2023年新员工-业务实践安排（技术线）2.pdf","根据这一份文件，帮我用400字左右总结几点学习到的知识",chain_type ="refine")#"stuff""map_reduce" "refine"
 
-# pdf还没有实现，要换成chatbot
+# pdf和txt实现，要换成chatbot
