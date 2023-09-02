@@ -37,8 +37,14 @@ def chat_file(file_path,query,chain_type="refine"):
                 raw_text = text.decode('utf-8')
         except Exception as e:
             raw_text = f"Error occurred while reading DOC/DOCX file: {str(e)}"
+    elif file_ext == 'txt':
+        try:
+            with open(file_path, 'r') as file:
+                raw_text = file.read()
+        except Exception as e:
+            raw_text = f"Error occurred while reading TXT file: {str(e)}"
     else:
-        raw_text = "文件类型错误，必须是PDF或DOC文件！"
+        raw_text = "文件类型错误，必须是PDF或DOC或txt文件！"
     return raw_text
 
     # text_splitter = CharacterTextSplitter(
